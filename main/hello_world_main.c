@@ -11,12 +11,12 @@
 #include "freertos/task.h"
 #include "esp_system.h"
 #include "esp_spi_flash.h"
-
+#include "config.h"
 
 void app_main()
 {
-    printf("Hello world!\n");
-
+    printf("%s\n", HELLO_MSG);
+    printf("hello world!!\n");
     /* Print chip information */
     esp_chip_info_t chip_info;
     esp_chip_info(&chip_info);
